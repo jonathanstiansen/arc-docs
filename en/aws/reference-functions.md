@@ -224,7 +224,7 @@ exports.handler = arc.events.subscribe(count)
 Once deployed you can invoke `@event` handlers from any other function defined under the same `@app` namespace:
 
 ```javascript
-var arc = require('@achitect/functions')
+var arc = require('@architect/functions')
 
 arc.events.publish({
   name: 'hit-counter',
@@ -235,7 +235,7 @@ arc.events.publish({
 You can also invoke Lambdas across `@app` namespaces:
 
 ```javascript
-var arc = require('@achitect/functions')
+var arc = require('@architect/functions')
 
 arc.events.publish({
   app: 'some-other-app',
